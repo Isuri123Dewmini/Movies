@@ -1,0 +1,115 @@
+/* Main CSS */
+
+/* Container styles */
+.c234container {
+    background-color: #f0ece3; /* Soft beige background */
+    border-radius: 15px; /* More rounded container */
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 25px;
+    margin: 100px auto; /* Center container horizontally */
+    max-width: 850px; /* Slightly wider */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    width: 65%; /* Adjust width for better spacing */
+}
+
+/* Form content layout */
+.signup-content {
+    width: 70%;
+}
+
+/* Form title styles */
+.form-title {
+    font-size: 30px; /* Larger title font */
+    margin-bottom: 25px;
+    color: #343a40; /* Dark gray for title text */
+}
+
+/* Form input styles */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    color: #343a40; /* Dark gray for labels */
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc; /* Slightly thicker border */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Add transition for focus */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #ff6b6b; /* Coral red border on focus */
+    outline: none;
+}
+
+/* Form checkbox styles */
+.form-group input[type="checkbox"] {
+    margin-right: 12px; /* Add more space between checkbox and label */
+}
+
+.label-agree-term {
+    font-size: 14px; /* Slightly smaller font for terms label */
+    color: #6c757d; /* Grayish color for less emphasis */
+}
+
+/* Form button styles */
+.form-submit {
+    background-color: #ff6b6b; /* Coral red button */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px; /* Increase font size for better readability */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.form-submit:hover {
+    background-color: #e63946; /* Darker red on hover */
+}
+
+/* Sign-up image styles */
+.signup-image {
+    flex: 1; /* Take up one-third of container */
+    margin-right: 25px; /* Add more space between image and form */
+}
+
+.signup-image img {
+    width: 100%; /* Ensure image fills container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Softer rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.signup-form {
+    flex: 2; /* Take up two-thirds of container */
+    padding: 0 25px; /* Add more spacing between image and form */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .c234container {
+        flex-direction: column; /* Stack image and form vertically */
+    }
+
+    .signup-image {
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 20px; /* Add space below image */
+    }
+}
